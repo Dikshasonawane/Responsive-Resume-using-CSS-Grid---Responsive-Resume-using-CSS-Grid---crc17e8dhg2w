@@ -1,0 +1,119 @@
+.left-section { grid-area: left; }
+.right-section { grid-area: right; }
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: 300px 700px;
+    grid-template-areas: 'left right';
+}
+.left-section{
+    grid-column: span 1;
+    min-height: 1000px;
+    background-color: rgb(33, 31, 36);
+    color: white;
+}
+.left-content{
+    padding: 1rem;
+}
+.right-section{
+    grid-column: span 1/span 2;
+    min-height: 1000px;
+    background-color: rgb(230, 226, 219);
+    color: #0000;
+} 
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase; 
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 16px;
+    text-align: center;
+    padding: 1rem;
+}
+.icon{
+    list-style-type: none;
+}
+.social-media{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.personal-details{
+    margin-left: 15px
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+}
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.right-title{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.text{
+    color: #000;
+}
+@media screen and (max-width: 674px){
+    .main-content{
+        display: grid;
+        min-height: 1000px;
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 'left'
+                             'right';
+    }
+    .left-section{
+        background-color: rgb(33, 31, 36);
+        color: white;
+    }
+    .right-section{
+        background-color: rgb(230, 226, 219);
+        color: #0000;
+    }
+    .profile-image{
+        width: 30%;
+    }
+}
